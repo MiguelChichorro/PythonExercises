@@ -1,3 +1,5 @@
+from random import choice
+from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -5,6 +7,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-from random import choice
 student = ["Rafael", "Hugo", "Miguel", "Edvaldo"]
-print("The student chosen is {}".format(choice(student)))
+print("{}Hmm...{}".format(colors["red"], colors["clean"]))
+sleep(2)
+print("The student chosen is {}{}{}".format(colors["green"], choice(student), colors["clean"]))
