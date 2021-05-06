@@ -6,4 +6,9 @@ colors = {"clean": "\033[m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
 n1 = int(input("Type a number: "))
-print("Your number is {}, the successor of your number is {} and the predecessor is {}".format(n1, n1+1, n1-1))
+print("Your number is {}{}{}, "
+      "\nThe successor of your number is {}{}{}"
+      "\nAnd the predecessor is {}{}{}"
+      .format(colors["blue"], n1, colors["clean"],
+              colors["blue"], n1+1, colors["clean"],
+              colors["blue"], n1-1, colors["clean"]))

@@ -8,4 +8,9 @@ colors = {"clean": "\033[m",
 n1 = int(input('Type a number: '))
 n2 = int(input('Type a number: '))
 sum = n1 + n2
-print('Your first number was {} and your second was {} the sum between them is {}'.format(n1, n2, sum))
+print('Your first number was {}{}{} '
+      '\nAnd your second was {}{}{} '
+      '\nThe sum between them is {}{}{}'
+      .format(colors["blue"], n1, colors["clean"],
+              colors["red"], n2, colors["clean"],
+              colors["green"], sum, colors["clean"]))

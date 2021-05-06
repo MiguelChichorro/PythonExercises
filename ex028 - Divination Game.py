@@ -8,9 +8,9 @@ colors = {"clean": "\033[m",
 from random import randint
 from time import sleep
 num = randint(1, 5)
-print("{}==={}" * 6.format(colors["yellow"], colors["clean"]))
-print("{}LET´S PLAY A GAME!!!{}".format(colors["cian"], colors["clean"]))
-print("{}==={}" * 6.format(colors["yellow"], colors["clean"]))
+print("\033[33m===\033[m" * 6)
+print("\033[36mLET´S PLAY A GAME!!!\033[m")
+print("\033[33m===\033[m" * 6)
 answer = int(input("Choose a number between 0 and 5: "))
 print("\033[35mHmm let´s see...\033[m")
 sleep(2)
