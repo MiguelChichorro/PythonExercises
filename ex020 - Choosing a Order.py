@@ -1,3 +1,5 @@
+from random import sample
+from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -5,6 +7,8 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-from random import sample
 order = ["Rafael", "Hugo", "Miguel", "Edvaldo"]
-print("The presentation order is {} ".format(sample(order, k=4)))
+print("{}Hmm...let me see{}".format(colors["cian"], colors["clean"]))
+sleep(2)
+print("The presentation order is {}{}{} "
+      .format(colors["yellow"], sample(order, k=4), colors["clean"]))
