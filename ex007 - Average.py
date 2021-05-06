@@ -12,9 +12,9 @@ avg = (n1 + n2 + n3) / 3
 print("Your first grade was {}{}{}"
       "\nYour second grade was {}{}{}"
       "\nAnd your last grade was {}{}{}"
-      .format(colors["cian"], n1, colors["clean"],
-              colors["cian"], n2, colors["clean"],
-              colors["cian"], n3, colors["clean"]))
+      .format(colors["yellow"], n1, colors["clean"],
+              colors["yellow"], n2, colors["clean"],
+              colors["yellow"], n3, colors["clean"]))
 if avg < 6:
     print("{}The average you got on the two months is {:.1f}"
           "\nSorry but you need to do the test again{}"
