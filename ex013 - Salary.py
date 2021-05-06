@@ -7,4 +7,7 @@ colors = {"clean": "\033[m",
           "cian": "\033[36m"}
 oldsal = float(input("Type your old salary: R$ "))
 newsal = oldsal + (oldsal * 0.15)
-print("Your old salary is R${:.2f} and your new salary with 15% increase is R${:.2f}".format(oldsal,  newsal))
+print("Your old salary is {}R${:.2f}{}"
+      "\nAnd your new salary with 15% increase is {}R${:.2f}{}"
+      .format(colors["red"], oldsal, colors["clean"],
+              colors["green"], newsal, colors["clean"]))
