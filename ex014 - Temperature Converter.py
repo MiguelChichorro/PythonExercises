@@ -8,4 +8,9 @@ colors = {"clean": "\033[m",
 C = float(input("Type degree Celsius:"))
 F = (C * 9 / 5) + 32
 K = C + 273.15
-print("Your degree Celsius is {:.0f}°C, in degree Fahrenheit is {:.0f}°F and in degree Kelvin is {:.0f}°K". format(C, F, K))
+print("Your degree Celsius is {}{:.0f}°C{}"
+      "\ndegree Fahrenheit is {}{:.0f}°F{}"
+      "\ndegree Kelvin is {}{:.0f}°K{}"
+      .format(colors["blue"], C, colors["clean"],
+              colors["blue"], F, colors["clean"],
+              colors["blue"], K, colors["clean"]))
