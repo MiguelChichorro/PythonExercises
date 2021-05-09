@@ -8,14 +8,15 @@ colors = {"clean": "\033[m",
 from random import randint
 from time import sleep
 num = randint(1, 5)
-print("\033[33m===\033[m" * 6)
-print("\033[36mLET´S PLAY A GAME!!!\033[m")
-print("\033[33m===\033[m" * 6)
+print("{}==={}".format(colors["yellow"], colors["clean"]) * 6)
+print("{}LET´S PLAY A GAME!!!{}".format(colors["purple"], colors["clean"]))
+print("{}==={}".format(colors["yellow"], colors["clean"]) * 6)
 answer = int(input("Choose a number between 0 and 5: "))
-print("\033[35mHmm let´s see...\033[m")
+print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(2)
 if answer == num:
-    print("\033[32mCongratulations, you win :D\033[m")
+    print("{}Congratulations, you win :D{}".format(colors["green"], colors["clean"]))
 else:
-    print("\033[31mhmm sorry try again later ;---------;\033[m")
-print("\033[34mGAME OVER!!! The game number is {} and your number is {}\033[m".format(num, answer))
+    print("{}hmm sorry try again later ;---------;{}".format(colors["red"], colors["clean"]))
+print("{}GAME OVER!!! The game number is {} and your number is {}{}"
+      .format(colors["cian"], num, answer, colors["clean"]))
