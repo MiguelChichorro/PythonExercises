@@ -1,3 +1,5 @@
+from random import randint
+from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -5,8 +7,6 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-from random import randint
-from time import sleep
 num = randint(1, 5)
 print("{}==={}".format(colors["yellow"], colors["clean"]) * 6)
 print("{}LET´S PLAY A GAME!!!{}".format(colors["purple"], colors["clean"]))
