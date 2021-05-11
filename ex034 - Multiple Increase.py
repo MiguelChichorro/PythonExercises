@@ -1,3 +1,4 @@
+from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -6,10 +7,12 @@ colors = {"clean": "\033[m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
 sal = int(input("Type your salary:"))
+print("{}Loading...{}".format(colors["green"], colors["clean"]))
+sleep(2)
 if sal > 1250:
     newsal = sal + (sal * 0.10)
-    print("\033[33mYour new salary with 10% increase is US${}\033[m".format(newsal))
+    print("{}Your new salary with 10% increase is US${}{}".format(colors["green"], newsal, colors["clean"]))
 else:
     newsal = sal + (sal * 0.15)
-    print("\033[33mYour new salary with 15% increase is US${}\033[m".format(newsal))
-print("\033[34mCongratulations!!!\033[m")
+    print("{}Your new salary with 15% increase is US${}{}".format(colors["green"], newsal, colors["clean"]))
+print("{}Congratulations!!!{}".format(colors["yellow"], colors["clean"]))
