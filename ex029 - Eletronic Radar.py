@@ -1,3 +1,4 @@
+from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -7,8 +8,10 @@ colors = {"clean": "\033[m",
           "cian": "\033[36m"}
 v = float(input("type the car speed was: "))
 tic = (v - 80) * 7
+print("{}Loading...{}".format(colors["green"], colors["clean"]))
+sleep(2)
 if v > 80:
-    print("\033[31mYou were very fast, your speed was {} km\033[m".format(v))
-    print("\033[31mNow you need to pay {} $US because of that\033[m".format(tic))
+    print("{}You were very fast, your speed was {} km{}".format(colors["red"], v, colors["clean"]))
+    print("{}Now you need to pay {} $US because of that{}".format(colors["red"], tic, colors["clean"]))
 else:
-    print("\033[32mYou were in the right speed, you can move on\033[m")
+    print("{}You were in the right speed, you can move on{}".format(colors["green"], colors["clean"]))
