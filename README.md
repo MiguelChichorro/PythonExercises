@@ -1,2 +1,2 @@
-# PythonExercises
-These Exercises i did when was doing the Python Course
+#PythonExercises
+These Exercises I did when was doing the Python Course
