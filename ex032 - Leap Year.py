@@ -1,3 +1,5 @@
+from datetime import date
+from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -5,11 +7,12 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-from datetime import date
 y = int(input("Type any year and if you just wanna write the actual year type 0: "))
+print("{}Loading...{}".format(colors["green"], colors["clean"]))
+sleep(2)
 if y == 0:
     y = date.today().year
 if (y % 4) == 0 and (y % 100) != 0 or (y % 400) == 0:
-    print("\033[32m{} is a leap year\033[m".format(y))
+    print("{}{} is a leap year{}".format(colors["green"], y, colors["clean"]))
 else:
-    print("\033[31m {} isn´t a leap year\033[m".format(y))
+    print("{}{} isn´t a leap year{}".format(colors["red"], y, colors["clean"]))
