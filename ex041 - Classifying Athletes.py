@@ -16,6 +16,7 @@ sleep(0.5)
 birth = date(year, month, day)
 today = date.today()
 age = today.year - birth.year - ((today.month, today.day) < (birth.month, birth.day))
+print("{}You are {} years old{}".format(colors["blue"], age,colors["clean"]))
 if age <= 9:
     print("{}You are Mirin{}".format(colors["blue"], colors["clean"]))
 elif (age > 9) and (age <= 14):
