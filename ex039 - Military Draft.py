@@ -26,10 +26,15 @@ elif age < 17:
     print("{}Hello {}"
           "\nYou have {} years old"
           "\nYou need to enlist in {} years{}"
-          .format(colors["blue"], name, age, y, colors["clean"]))
+          .format(colors["green"], name, age, y, colors["clean"]))
 else:
     y = age - 18
     print("{}Hello {}"
           "\nYou have {} years old"
           "\nYour enlistment time was {} years ago{}"
           .format(colors["red"], name, age, y, colors["clean"]))
+if (today.month == birth.month) and (today.day == birth.day):
+    print("{}Happy birthday to you!!!{}"
+          "\n{}Happy birthday to you!!!{}"
+          "\n{}Happy birthday to you!!!{}"
+          .format(colors["yellow"], colors["clean"], colors["red"], colors["clean"], colors["purple"], colors["clean"]))
