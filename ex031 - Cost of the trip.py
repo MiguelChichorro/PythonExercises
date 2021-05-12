@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-trip = int(input("Type your travel distance in km: "))
+trip = int(input("Enter your travel distance in km: "))
 print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(2)
 if trip > 200:

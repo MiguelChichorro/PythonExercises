@@ -5,7 +5,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = int(input("Type a number: "))
+n1 = int(input("Enter a number: "))
 print("Your number is {}{}{}, "
       "\nThe successor of your number is {}{}{}"
       "\nAnd the predecessor is {}{}{}"

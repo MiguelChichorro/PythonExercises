@@ -5,8 +5,8 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-some = input('Type something: ')
-print('{}The primal type of your thing is {}{} '.format(colors["blue"], type(some), colors["clean"]))
+some = input('Enter something: ')
+print('{}The primal Enter of your thing is {}{} '.format(colors["blue"], type(some), colors["clean"]))
 print('{}It´s numeric? {}{}'.format(colors["green"], some.isnumeric(), colors["clean"]))
 print('{}It´s alphabet? {}{}'.format(colors["red"], some.isalpha(), colors["clean"]))
 print('{}It´s alphanumeric? {}{}'.format(colors["cian"], some.isalnum(), colors["clean"]))

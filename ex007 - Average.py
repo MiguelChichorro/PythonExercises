@@ -5,9 +5,9 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = float(input("Type the first grade: "))
-n2 = float(input("Type the second grade:"))
-n3 = float(input("Type the thirty grade "))
+n1 = float(input("Enter the first grade: "))
+n2 = float(input("Enter the second grade:"))
+n3 = float(input("Enter the thirty grade "))
 avg = (n1 + n2 + n3) / 3
 print("Your first grade was {}{}{}"
       "\nYour second grade was {}{}{}"

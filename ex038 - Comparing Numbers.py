@@ -6,8 +6,8 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-num1 = int(input("Type the first number: "))
-num2 = int(input("Type the second number: "))
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(0.5)
 if num1 > num2:

@@ -6,10 +6,10 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-city = str(input("Type the name about any city: ")).strip()
+city = str(input("Enter the name about any city: ")).strip()
 print("{}Hmm...let me see{}".format(colors["cian"], colors["clean"]))
 sleep(2)
 city = city.split()
-print("The name of the city you type begin with {}Santo?{} {}{}{}"
+print("The name of the city you Enter begin with {}Santo?{} {}{}{}"
       .format(colors["cian"], colors["clean"],
               colors["cian"], "SANTO" in city[0].upper(), colors["clean"]))

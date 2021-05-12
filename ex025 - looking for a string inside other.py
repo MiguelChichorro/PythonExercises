@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-name = str(input("Type your name: "))
+name = str(input("Enter your name: "))
 print("{}Hmm...let me see{}".format(colors["cian"], colors["clean"]))
 sleep(2)
 name = name.strip()

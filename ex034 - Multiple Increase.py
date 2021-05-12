@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-sal = int(input("Type your salary:"))
+sal = int(input("Enter your salary:"))
 print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(2)
 if sal > 1250:

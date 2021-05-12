@@ -6,9 +6,9 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = int(input("Type the first number: "))
-n2 = int(input("Type the second number: "))
-n3 = int(input("Type the third number:  "))
+n1 = int(input("Enter the first number: "))
+n2 = int(input("Enter the second number: "))
+n3 = int(input("Enter the third number:  "))
 print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(2)
 # Who is largest

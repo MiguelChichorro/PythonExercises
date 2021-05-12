@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = float(input("Type a real number: "))
+n1 = float(input("Enter a real number: "))
 print("Your number is {}{:.2f}{} and using the function trunc is {}{}{}"
       "\nBut we can use the function int to {}{}{}"
       "\n{}the two doing the same thing{}"

@@ -6,9 +6,9 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-lin1 = float(input("Type the first length: "))
-lin2 = float(input("Type the second length: "))
-lin3 = float(input("Type the Third length: "))
+lin1 = float(input("Enter the first length: "))
+lin2 = float(input("Enter the second length: "))
+lin3 = float(input("Enter the Third length: "))
 print("{}reading data...{}".format(colors["green"], colors["clean"]))
 sleep(0.5)
 if (lin1 + lin2) > lin3 and (lin1 + lin3) > lin2 and (lin2 + lin3) > lin1:

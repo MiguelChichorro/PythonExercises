@@ -7,10 +7,10 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-name = str(input("Type your name: "))
-day = int(input("Type the your birth day: "))
-month = int(input("Type the your birth month: "))
-year = int(input("Type the your birth year: "))
+name = str(input("Enter your name: "))
+day = int(input("Enter the your birth day: "))
+month = int(input("Enter the your birth month: "))
+year = int(input("Enter the your birth year: "))
 birth = date(year, month, day)
 today = date.today()
 age = today.year - birth.year - ((today.month, today.day) < (birth.month, birth.day))

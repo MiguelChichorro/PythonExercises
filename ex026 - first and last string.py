@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-ph = str(input("Type any phrase here: ")).upper().strip()
+ph = str(input("Enter any phrase here: ")).upper().strip()
 print("{}Hmm...let me see{}".format(colors["cian"], colors["clean"]))
 sleep(2)
 print("The phrase has {}{}{} letters {}A{}".format(colors["yellow"], ph.count("A"), colors["clean"], colors["yellow"], colors["clean"]))

@@ -5,7 +5,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = int(input("Type any number: "))
+n1 = int(input("Enter any number: "))
 print("{}={}".format(colors["red"], colors["clean"])*12)
 print("{} * {:2} = {}"
       "\n{} * {:2} = {}"

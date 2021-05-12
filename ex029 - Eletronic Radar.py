@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-v = float(input("type the car speed was: "))
+v = float(input("Enter the car speed was: "))
 tic = (v - 80) * 7
 print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(2)

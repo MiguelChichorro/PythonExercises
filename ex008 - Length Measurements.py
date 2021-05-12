@@ -5,7 +5,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = float(input("Type some number in meters: "))
+n1 = float(input("Enter some number in meters: "))
 print("{}Your number in meters is {:.0f} m"
       "\nIn km is {} km "
       "\nIn hm is {} hm"

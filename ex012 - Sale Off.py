@@ -5,7 +5,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = float(input("Type the product price: R$"))
-sale = n1*0.05
+n1 = float(input("Enter the product price: R$"))
+sale = n1 - (n1*0.05)
 print("The price with 5% off is {}R${:.2f}{}"
-      .format(colors["green"], n1 - sale, colors["clean"]))
+      .format(colors["green"], sale, colors["clean"]))

@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = float(input("Type a number :"))
+n1 = float(input("Enter a number :"))
 Sin = sin(radians(n1))
 Cos = cos(radians(n1))
 Tan = tan(radians(n1))

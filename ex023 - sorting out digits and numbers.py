@@ -7,11 +7,11 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-number = int(input("Type any number int between 0 and 9999: "))
+number = int(input("Enter any number int between 0 and 9999: "))
 print("{}Hmm...let me see{}".format(colors["cian"], colors["clean"]))
 sleep(2)
 if number > 9999:
-    print("{}You need to type a number smaller 9999{}".format(colors["red"], colors["clean"]))
+    print("{}You need to Enter a number smaller 9999{}".format(colors["red"], colors["clean"]))
 else:
     u = number // 1 % 10
     t = number // 10 % 10

@@ -7,7 +7,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-y = int(input("Type any year and if you just wanna write the actual year type 0: "))
+y = int(input("Enter any year and if you just wanna write the actual year Enter 0: "))
 print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(2)
 if y == 0:

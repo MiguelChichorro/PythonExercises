@@ -5,6 +5,6 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-name = input('Type your name: ')
+name = input('Enter your name: ')
 print('{}Nice to meet you, {}{}{}'
       .format(colors["blue"], colors["clean"], colors["yellow"], name))

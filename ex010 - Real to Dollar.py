@@ -5,7 +5,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1 = float(input("Type how many money do you have in your wallet(in Real): R$"))
+n1 = float(input("Enter how many money do you have in your wallet(in Real): R$"))
 print("You have {}R${:.2f}{} reals and you can buy {}US${:.2f}{} dollars"
       "\nBuy {}EUR${:.2f}{} and buy {}GBP${:.2f}{}"
       .format(colors["green"], n1, colors["clean"],

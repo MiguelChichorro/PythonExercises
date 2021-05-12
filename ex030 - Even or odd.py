@@ -6,7 +6,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-num = int(input("Type a a number? "))
+num = int(input("Enter a a number? "))
 print("{}Loading...{}".format(colors["green"], colors["clean"]))
 sleep(2)
 if num % 2 == 0:
