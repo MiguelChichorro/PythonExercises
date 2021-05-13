@@ -30,7 +30,7 @@ elif age < 17:
 else:
     y = age - 18
     print("{}Hello {}"
-          "\nYou have {} years old"
+          "\nYou are {} years old"
           "\nYour enlistment time was {} years ago{}"
           .format(colors["red"], name, age, y, colors["clean"]))
 if (today.month == birth.month) and (today.day == birth.day):
