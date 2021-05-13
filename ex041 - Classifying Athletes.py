@@ -18,14 +18,14 @@ today = date.today()
 age = today.year - birth.year - ((today.month, today.day) < (birth.month, birth.day))
 print("{}You are {} years old{}".format(colors["blue"], age, colors["clean"]))
 if age <= 9:
-    print("{}You are Mirin{}".format(colors["blue"], colors["clean"]))
-elif (age > 9) and (age <= 14):
-    print("{}You are Childish{}".format(colors["cian"], colors["clean"]))
-elif (age > 14) and (age <= 19):
-    print("{}You are Junior{}".format(colors["purple"], colors["clean"]))
-elif (age > 19) and (age <= 20):
-    print("{}You are Sênior{}".format(colors["yellow"], colors["clean"]))
-elif (age > 20) and (age <= 100):
-    print("{}You are Master{}".format(colors["red"], colors["clean"]))
+    print("You are {}Mirin{}".format(colors["blue"], colors["clean"]))
+elif age <= 14:
+    print("You are {}Childish{}".format(colors["cian"], colors["clean"]))
+elif age <= 19:
+    print("You are {}Junior{}".format(colors["purple"], colors["clean"]))
+elif age <= 20:
+    print("You are {}Sênior{}".format(colors["yellow"], colors["clean"]))
+elif age <= 100:
+    print("You are {}Master{}".format(colors["red"], colors["clean"]))
 else:
-    print("{}You are Legend{}".format(colors["green"], colors["clean"]))
+    print("You are {}Legend{}".format(colors["green"], colors["clean"]))

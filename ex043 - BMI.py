@@ -6,12 +6,12 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-height = float(input("Enter your height in cm: "))
+height = float(input("Enter your height in m: "))
 weight = float(input("Enter your weight in kg: "))
-bmi = weight / (height / 100) ** 2
+bmi = weight / (height ** 2)
 print("{}reading data...{}".format(colors["green"], colors["clean"]))
 sleep(0.5)
-print("{}Your Body Mass Index is {:.2f}{}".format(colors["cian"], bmi, colors["clean"]))
+print("{}Your Body Mass Index is {:.1f}{}".format(colors["cian"], bmi, colors["clean"]))
 if bmi < 18.5:
     print("{}You are Underweight, be alert{}".format(colors["yellow"], colors["clean"]))
 elif (bmi >= 18.5) and (bmi <= 24.9):

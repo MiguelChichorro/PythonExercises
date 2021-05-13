@@ -12,7 +12,7 @@ n3 = float(input("Enter the thirty grade: "))
 avg = (n1 + n2 + n3) / 3
 print("{}reading data...{}".format(colors["green"], colors["clean"]))
 sleep(0.5)
-print("{}Your average is {:.2f}{}".format(colors["cian"], avg, colors["clean"]))
+print("{}Your average is {:.1f}{}".format(colors["cian"], avg, colors["clean"]))
 if avg < 5:
     print("{}Sorry but you don´t pass, try again next year{}".format(colors["red"], colors["clean"]))
 elif (avg >= 5) and (avg <= 6.9):
