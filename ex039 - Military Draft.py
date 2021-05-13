@@ -18,13 +18,13 @@ print("{}reading data...{}".format(colors["green"], colors["clean"]))
 sleep(0.5)
 if age == 17 or age == 18:
     print("{}Hello {}"
-          "\nYou have {} years old"
+          "\nYou are {} years old"
           "\nYou need to enlist this year{}"
           .format(colors["yellow"], name, age, colors["clean"]))
 elif age < 17:
     y = 17 - age
     print("{}Hello {}"
-          "\nYou have {} years old"
+          "\nYou are {} years old"
           "\nYou need to enlist in {} years{}"
           .format(colors["green"], name, age, y, colors["clean"]))
 else:
