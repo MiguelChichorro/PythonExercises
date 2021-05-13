@@ -19,4 +19,3 @@ elif num2 > num1:
 else:
     print("{}The two numbers are equal{}"
           .format(colors["red"], colors["clean"]))
-
