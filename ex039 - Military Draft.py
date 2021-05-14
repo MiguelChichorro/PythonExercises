@@ -8,10 +8,11 @@ colors = {"clean": "\033[m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
 gender = int(input("Before continuing the enlistment Enter your gender""\n [ 1 ] Man" "\n [ 2 ] Woman\n: "))
+will = 0
 if gender == 2:
-    print("Yo aren´t required to do the enlistment")
-    print("Have a good day")
-elif gender == 1:
+    will = int(input("You aren´t required to do the enlistment,"
+                       "but would you like to do the enlist?""\n [1] Yes""\n [2] No \n: "))
+if gender == 1 or will == 1:
     name = str(input("Enter your name: "))
     day = int(input("Enter the your birth day: "))
     month = int(input("Enter the your birth month: "))
@@ -46,5 +47,7 @@ elif gender == 1:
               "\n{}Happy birthday to you!!!{}"
               .format(colors["yellow"], colors["clean"], colors["cian"], colors["clean"], colors["purple"],
                       colors["clean"]))
+elif will == 2:
+    print("Have a good day")
 else:
     print("{}Please enter 1 or 2 only{}".format(colors["red"], colors["clean"]))
