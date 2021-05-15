@@ -7,7 +7,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-itens = ("ROCK", "PAPER", "SISSORS")
+itens = ("PAPER", "ROCK", "SISSORS")
 com = randint(0, 2)
 print("{}==={}".format(colors["cian"], colors["clean"]) * 10)
 print("{}LET´S PLAY ROCK-PAPER-SISSORS!!!{}".format(colors["red"], colors["clean"]))
@@ -18,10 +18,12 @@ print("JO")
 sleep(1)
 print("KEN")
 sleep(1)
-print("PO")
+print("PO!!!")
+sleep(1)
 print("{}-=-{}".format(colors["blue"], colors["clean"]) * 7)
 print("{}You choose {}\nthe computer choose {}{}".format(colors["yellow"], itens[player], itens[com],  colors["clean"]))
 print("{}-=-{}".format(colors["blue"], colors["clean"]) * 7)
+sleep(1)
 if player == 0 and com == 1:
     print("{}Congradulations you ate the computer :D{}".format(colors["green"], colors["clean"]))
 elif com == 0 and player == 1:
@@ -43,5 +45,3 @@ else:
 print("{}==={}".format(colors["cian"], colors["clean"]) * 10)
 print("{}GAME OVER!!!{}".format(colors["red"], colors["clean"]))
 print("{}==={}".format(colors["cian"], colors["clean"]) * 10)
-
-
