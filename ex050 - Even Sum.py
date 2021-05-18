@@ -12,4 +12,7 @@ for c in range(1, 7):
     if (sum % 2) == 0:
         sumc += sum
         cont += 1
-print("{}You enter {} even numbers and the sum between them is {}{}".format(colors["blue"], cont, sumc, colors["clean"]))
+print("{}You enter {} even {} {} {}{}"
+      .format(colors["blue"], cont, "numbers" if cont > 1 else "number",
+              "and the sum between them is" if cont > 1 else "so don´t have a sum",
+              sumc, colors["clean"]))
