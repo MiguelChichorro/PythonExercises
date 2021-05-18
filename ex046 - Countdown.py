@@ -1,5 +1,7 @@
 from time import sleep
-import emoji
+from PIL import Image
+from playsound import playsound
+
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -11,5 +13,6 @@ for c in range(10, 0, -1):
     print(c)
     sleep(1)
 print("\U0001F4A5" * 10)
-print("BOOM")
+print("BOOM " * 3)
 print("\U0001F4A5" * 10)
+playsound('Implements\\champions.mp3')
