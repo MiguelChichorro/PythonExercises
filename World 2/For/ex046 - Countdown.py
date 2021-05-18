@@ -13,4 +13,4 @@ for c in range(10, 0, -1):
 print("{}\U0001F4A5{}".format(colors["yellow"], colors["clean"]) * 10)
 print("{}BOOM{} ".format(colors["blue"], colors["clean"]) * 3)
 print("{}\U0001F4A5{}".format(colors["red"], colors["clean"]) * 10)
-playsound('Implements\\champions.mp3')
+playsound('../../Implements/champions.mp3')

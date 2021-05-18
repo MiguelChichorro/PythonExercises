@@ -1,2 +1,2 @@
 from playsound import playsound
-playsound('Implements\\la.mp3')
+playsound('../../Implements/la.mp3')

@@ -27,4 +27,4 @@ else:
                   colors["red"], th, colors["clean"]))
     if number == 115:
         print("{}Congratulations!!! You find the blood of the dead song{}".format(colors["cian"], colors["clean"]))
-        playsound('Implements\\zbs.mp3')
+        playsound('../../Implements/zbs.mp3')
