@@ -23,12 +23,12 @@ for c in range(1, 5):
         old = age
         nmold = names[0]
 avg = sumage / 4
-print("{}The age average is {}{}".format(colors["yellow"], avg,colors["clean"]))
+print("{}The age average is {}{}".format(colors["yellow"], avg, colors["clean"]))
 if old == 0:
     print("{}There are not Men{}".format(colors["red"], colors["clean"]))
 else:
     print("{}the older man is {} years old and his name is {}{}".format(colors["blue"], old, nmold, colors["clean"]))
 if contw > 0:
-    print("{}The number of minor women is {}{}".format(colors["purble"], contw,colors["clean"]))
+    print("{}The number of minor women is {}{}".format(colors["purble"], contw, colors["clean"]))
 else:
     print("{}There are not Women{}".format(colors["red"], colors["clean"]))
