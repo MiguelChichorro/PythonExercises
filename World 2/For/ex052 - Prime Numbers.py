@@ -7,7 +7,6 @@ colors = {"clean": "\033[m",
           "cian": "\033[36m"}
 num = int(input("Enter a number: "))
 cont = 0
-print("-" * 50)
 for c in range(1, num + 1):
     if (num % c) == 0:
         cont += 1

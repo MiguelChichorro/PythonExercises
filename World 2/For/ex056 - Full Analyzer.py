@@ -29,6 +29,6 @@ if old == 0:
 else:
     print("{}the older man is {} years old and his name is {}{}".format(colors["blue"], old, nmold, colors["clean"]))
 if contw > 0:
-    print("{}The number of minor women is {}{}".format(colors["purble"], contw, colors["clean"]))
+    print("{}The number of minor women is {}{}".format(colors["purple"], contw, colors["clean"]))
 else:
     print("{}There are not Women{}".format(colors["red"], colors["clean"]))

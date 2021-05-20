@@ -1,3 +1,4 @@
+from datetime import date
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -5,11 +6,13 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
+today = date.today().year
 old = 0
 new = 0
 for c in range(1, 8):
-    major = int(input("Enter seven ages: "))
-    if major >= 21:
+    major = int(input("Enter seven birthday yeras: "))
+    age = today - major
+    if age >= 21:
         old += 1
     else:
         new += 1

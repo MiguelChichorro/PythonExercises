@@ -11,4 +11,4 @@ for c in range(1, 501, 2):
     if (c % 3) == 0:
         cont = cont + 1
         sumc = sumc + c
-print("|| {}The total numbers is {} And the sum between them is{:3}{} ||".format(colors["red"], cont, sumc, colors["clean"]))
+print("|| {}The total numbers is {} And the sum between them is {:3}{} ||".format(colors["yellow"], cont, sumc, colors["clean"]))

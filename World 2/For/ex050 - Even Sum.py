@@ -8,6 +8,7 @@ colors = {"clean": "\033[m",
 sumc = 0
 cont = 0
 for c in range(1, 7):
+    print("{}----- {} Number -----{}".format(colors["cian"], c, colors["clean"]))
     sum = int(input("Enter a number: "))
     if (sum % 2) == 0:
         sumc += sum

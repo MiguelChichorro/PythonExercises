@@ -9,9 +9,7 @@ ph = str(input("Enter any phrase: ")).strip().upper()
 print("{}You enter with the phrase {}{}".format(colors["cian"], ph, colors["clean"]))
 words = ph.split()
 togt = "".join(words)
-inv = ""
-for letter in range(len(togt) - 1, -1, -1):
-    inv += togt[letter]
+inv = togt[::-1]
 print("{}The reverse is {}{}".format(colors["yellow"], inv, colors["clean"]))
 if inv == togt:
     print("{}{} is a palindrome{}".format(colors["green"], ph, colors["clean"]))

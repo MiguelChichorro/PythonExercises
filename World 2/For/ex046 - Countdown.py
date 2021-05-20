@@ -7,7 +7,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-for c in range(10, 0, -1):
+for c in range(10, -1, -1):
     print(c)
     sleep(1)
 print("{}\U0001F4A5{}".format(colors["yellow"], colors["clean"]) * 10)
