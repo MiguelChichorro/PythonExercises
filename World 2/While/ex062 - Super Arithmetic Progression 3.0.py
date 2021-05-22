@@ -20,18 +20,22 @@ while ans == 1:
         term += r
         cont += 1
     print("END", end="")
-    ans2 = int(input("\nIf you want to see more terms Enter [ 1 ]\n To Leave Enter [ 0 ]: "))
+    ans2 = int(input("\n{}If you want to see more terms{}\n{}Enter [ 1 ]{}\n{}Another number to leave:{} "
+                     .format(colors["blue"], colors["clean"], colors["yellow"], colors["clean"], colors["red"], colors["clean"])))
     while ans2 == 1:
         cont = 0
         terms = 1
-        termadd = int(input("Enter the number of terms you want to see more\nEnter [ 0 ] to leave: "))
+        termadd = int(input("{}Enter the number of terms you want to see more:{} "
+                            .format(colors["blue"], colors["clean"])))
         while cont < termadd:
             print("{}{} {}".format(colors["yellow"], term, colors["clean"]), end="-> ")
             term += r
             cont += 1
         print("END", end="")
-        ans2 = int(input("{}\nPress [ 1 ] to add more terms or number [ 0 ] to leave: {}".format(colors["cian"], colors["clean"])))
-    if ans2 == 0 or termadd == 0:
-        ans = int(input("If you want to put another term and razon enter [ 1 ]\nTo leave [ 0 ]:"))
+        ans2 = int(input("{}\nPress [ 1 ] to add more terms{}\n{}Another number to leave:{} "
+                         .format(colors["blue"], colors["clean"], colors["red"], colors["clean"])))
+    if ans2 != 1 or termadd != 1:
+        ans = int(input("{}If you want to put another term and razon{}\n{}Enter [ 1 ]{}\n{}Another number to leave:{} "
+                        .format(colors["blue"], colors["clean"], colors["yellow"], colors["clean"], colors["red"], colors["clean"])))
 if ans != 1:
     print("{}Have a good day!{}".format(colors["green"], colors["clean"]))
