@@ -5,9 +5,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-cont = 0
-n1, n2 = 0, 1
-ans = 1
+n1, ans, cont, n2 = 1, 1, 0, 0
 nterm = int(input("Enter How many terms you want: "))
 while ans == 1:
     while cont < nterm:
@@ -17,6 +15,6 @@ while ans == 1:
         n2 = nte
         cont += 1
     print("END", end="")
-    ans = int(input("{}\nIf you want to do again\nEnter [ 1 ]\n{}Another number to leave:{} ".format(colors["blue"], colors["clean"])))
+    ans = int(input("{}\nIf you want to do again\nEnter [ 1 ]\nAnother number to leave:{} ".format(colors["blue"], colors["clean"])))
 if ans != 1:
     print("{}Have a good day!{}".format(colors["green"], colors["clean"]))

@@ -7,8 +7,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-ans = 1
-cont = 0
+ans, cont = 1, 0
 print("{}<--------------------------------->{}".format(colors["yellow"], colors["clean"]))
 print("{}\U0001F916 I WANNA PLAY A GAME!!!!! \U0001F916{}".format(colors["blue"], colors["clean"]))
 print("{}<--------------------------------->{}".format(colors["yellow"], colors["clean"]))
@@ -23,7 +22,7 @@ while ans == 1:
         cont += 1
     print("{}={}".format(colors["green"], colors["clean"]) * 20)
     print("{}\U0001F973\U0001F973\U0001F973\U0001F973{}".format(colors["green"], colors["clean"]))
-    print("{}CONGRADULATIONS{}, {}YOU DISCOVER THE NUMBER{}"
+    print("{}CONGRADULATIONS{}, {}YOU DISCOVERED THE NUMBER{}"
           .format(colors["green"], colors["clean"],
                   colors["blue"], colors["clean"]))
     print("{}I choose the number {}{}{} and you found"
@@ -33,10 +32,10 @@ while ans == 1:
     elif (cont > 0) and (cont < 5):
         print("{}\U0001F60E You needed {} {}, nice \U0001F60E{}".format(colors["purple"], cont, "attempt" if cont == 1 else "attemps", colors["clean"]))
     elif (cont > 5) and (cont < 9):
-        print("{}\U0001F642 You needed {} attempts, it´s ok {} \U0001F642".format(colors["yellow"], cont, colors["clean"]))
+        print("{}\U0001F642 You needed {} attempts, it´s ok \U0001F642{}".format(colors["yellow"], cont, colors["clean"]))
     else:
         print("{}\U0001F610 Omg you needed a lot of attempts \U0001F610{}".format(colors["red"], colors["clean"]))
-    ans = int(input("{}Do you wanna play again? \nEnter [1] to play again or another number to leave:{} "
+    ans = int(input("{}Do you wanna play again? \nPress [1] to play again or another number to leave:{} "
                     .format(colors["blue"], colors["clean"], colors["yellow"], colors["clean"])))
 if ans != 1:
     print("{}<--------------------------------->{}".format(colors["yellow"], colors["clean"]))

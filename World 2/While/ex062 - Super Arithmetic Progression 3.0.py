@@ -5,9 +5,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-ans2 = 0
-termadd = 0
-ans = 1
+ans, termadd, ans2 = 1, 0, 0
 print("=" * 22)
 print("{}Super Arithmetic Progession{}".format(colors["cian"], colors["clean"]))
 print("=" * 22)
@@ -23,8 +21,7 @@ while ans == 1:
     ans2 = int(input("\n{}If you want to see more terms{}\n{}Enter [ 1 ]{}\n{}Another number to leave:{} "
                      .format(colors["blue"], colors["clean"], colors["yellow"], colors["clean"], colors["red"], colors["clean"])))
     while ans2 == 1:
-        cont = 0
-        terms = 1
+        cont, terms = 0, 1
         termadd = int(input("{}Enter the number of terms you want to see more:{} "
                             .format(colors["blue"], colors["clean"])))
         while cont < termadd:

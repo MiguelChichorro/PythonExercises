@@ -9,9 +9,7 @@ ans = 1
 print("{}You can enter a lot of number\nWhen you enter 999 the sum stop\nAnd Show the sum between all numbers you enter{}"
       .format(colors["blue"], colors["clean"]))
 while ans == 1:
-    cont = 0
-    sum = 0
-    n = 0
+    cont, sum, n = 0, 0, 0
     while n != 999:
         n = int(input("Enter a number: "))
         sum = n + sum

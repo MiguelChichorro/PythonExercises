@@ -7,9 +7,7 @@ colors = {"clean": "\033[m",
           "cian": "\033[36m"}
 ans = 1
 while ans == 1:
-    ch = 4
-    n1 = 0
-    n2 = 0
+    ch, n1, n2 = 4, 0, 0
     while ch == 4:
         n1 = int(input("Enter a number: "))
         n2 = int(input("Enter a number: "))
