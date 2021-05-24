@@ -26,10 +26,12 @@ while ans == 1:
             ncont = int(input("{}Press [ 1 ] to enter another number{}\n{}Another number to leave:{} "
                               .format(colors["blue"], colors["clean"], colors["red"], colors["clean"])))
             if ncont != 1:
-                print("{}The smaller number you enter is {}{}"
+                print("{}You enter {} {}{}"
+                      "\n{}The smaller number you enter is {}{}"
                       "\n{}The bigger number you enter is {}{}"
                       "\n{}The average between all numbers you enter is {}{}"
-                      .format(colors["blue"], sml, colors["clean"],
+                      .format(colors["cian"], cont, "number" if cont == 1 else "numbers", colors["clean"],
+                              colors["blue"], sml, colors["clean"],
                               colors["yellow"], bg, colors["clean"],
                               colors["purple"], avg, colors["clean"]))
                 again = int(input("{}Press [ 1 ] to enter another number{}\n{}Another number to leave:{} ".format(colors["green"], colors["clean"], colors["red"], colors["clean"])))

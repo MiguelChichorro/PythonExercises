@@ -5,9 +5,10 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-n1, ans, cont, n2 = 1, 1, 0, 0
-nterm = int(input("Enter How many terms you want: "))
+ans = 1
 while ans == 1:
+    n2, n1, cont = 1, 0, 0
+    nterm = int(input("Enter How many terms you want: "))
     while cont < nterm:
         print("{}{}{}".format(colors["yellow"], n1, colors["clean"]), end=" -> ")
         nte = n1 + n2

@@ -7,12 +7,13 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-ans, cont = 1, 0
+ans = 1
 print("{}<--------------------------------->{}".format(colors["yellow"], colors["clean"]))
 print("{}\U0001F916 I WANNA PLAY A GAME!!!!! \U0001F916{}".format(colors["blue"], colors["clean"]))
 print("{}<--------------------------------->{}".format(colors["yellow"], colors["clean"]))
 print("{}HMMMM I choose a number between 0 and 10{}".format(colors["yellow"], colors["clean"]))
 while ans == 1:
+    cont = 0
     com = randint(0, 10)
     player = int(input("{}\U0001F914 What is the number I choose \U0001F914?{} ".format(colors["blue"], colors["clean"])))
     print("{}Loading...{}".format(colors["green"], colors["clean"]))
