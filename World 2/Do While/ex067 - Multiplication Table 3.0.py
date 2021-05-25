@@ -5,3 +5,18 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
+ans = 1
+while ans == 1:
+    while True:
+        n = c = result = 0
+        print("=" * 25)
+        n = int(input("Enter a number to the table :"))
+        if n < 0:
+            break
+        for c in range(0, 11):
+            result = c * n
+            print(f"{colors['blue']}{n} * {c} = {result}{colors['clean']}")
+    if n < 0:
+        ans = int(input(f"{colors['cian']}\nPress [ 1 ] to do again or another number to leave: {colors['clean']}"))
+if ans != 1:
+    print(f"{colors['green']}Have a good day!{colors['clean']}")
