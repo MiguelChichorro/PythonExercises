@@ -9,7 +9,7 @@ gender = str(input("Enter your gender. \n{}[M]{} or {}[F]{}: "
                    .format(colors["blue"], colors["clean"], colors["purple"], colors["clean"]))).strip().upper()[0]
 while gender != "M" and gender != "F":
     gender = str(input("{}Please enter just {}M{} or {}F{}: "
-              .format(colors["red"], colors["blue"], colors["clean"], colors["purple"], colors["clean"]))).strip().upper()[0]
+                       .format(colors["red"], colors["blue"], colors["clean"], colors["purple"], colors["clean"]))).strip().upper()[0]
 if gender == "M":
     print("{}Welcome, Lord{}".format(colors["blue"], colors["clean"]))
 else:

@@ -18,6 +18,6 @@ while ans == 1:
         term += r
         cont += 1
     print("End")
-    ans = int(input("{}Press [ 1 ] to do again or another number to leave: {}".format(colors["cian"], colors["clean"])))
+    ans = int(input("{}\nPress [ 1 ] to do again or another number to leave: {}".format(colors["cian"], colors["clean"])))
 if ans != 1:
     print("{}Have a good day!{}".format(colors["green"], colors["clean"]))

@@ -32,7 +32,7 @@ while ans == 1:
             print("=" * 20)
         if age >= 18:
             agecont += 1
-        if gender == "F" and age >= 20:
+        if gender == "F" and age <= 20:
             wagecont += 1
         ans2 = int(input(f"{colors['green']}\nPress [ 1 ] to enter another person or another number to leave: {colors['clean']}"))
         if ans2 != 1:
@@ -49,9 +49,9 @@ while ans == 1:
         print("You do not enter women")
     else:
         if wagecont == 0:
-            print(f"{colors['purple']}You enter {'Just one woman and she is not over 20 yeas old' if wcont == 1 else f'{wcont} women and they are not over 20 yeas old'}{colors['clean']}")
+            print(f"{colors['purple']}You enter {'Just one woman and she is not less 20 yeas old' if wcont == 1 else f'{wcont} women and they are not less 20 yeas old'}{colors['clean']}")
         else:
-            print(f"{colors['purple']}You enter {'Just one woman and she is over 20 yeas old' if wcont == 1 else f'{wcont} women and they are over 20 yeas old'}{colors['clean']}")
+            print(f"{colors['purple']}You enter {'Just one woman and she is less 20 yeas old' if wcont == 1 else f'{wcont} women and they are less 20 yeas old'}{colors['clean']}")
     ans = int(input(f"{colors['cian']}\nPress [ 1 ] to do again or another number to leave: {colors['clean']}"))
 if ans != 1:
     print(f"{colors['green']}Have a good day!{colors['clean']}")
