@@ -8,7 +8,7 @@ colors = {"clean": "\033[m",
 ans = 1
 while ans == 1:
     tuple = ()
-    conteven = cont3 = cont9 = 0
+    conteven = 0
     for c in range(4):
         n = int(input("Enter a number between 1 and 10: "))
         if n % 2 == 0:
