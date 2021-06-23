@@ -11,5 +11,11 @@ for c in range(0, 5):
     values.append(int(input(f"Enter a number to the position {c}: ")))
 print(f"{colors['blue']}Reading data...{colors['clean']}")
 sleep(1)
-print(f"{colors['green']}The bigger value is {max(values)} and you find him in the position {values.index(max(values))}{colors['clean']}")
-print(f"{colors['yellow']}The smaller value is {min(values)} and you find him in the position {values.index(min(values))}{colors['clean']}")
+print(f"{colors['green']}The bigger value is {max(values)} and you find him in the positions", end=" ")
+for c, v in enumerate(values):
+    if v == max(values):
+        print(f"{c}...", end="")
+print(f"\n{colors['yellow']}The smaller value is {min(values)} and you find him in the positions", end=" ")
+for i, v in enumerate(values):
+    if v == min(values):
+        print(f"{i}...", end="")
