@@ -14,6 +14,9 @@ while ans == 1:
         n = int(input("Enter a number:"))
         if n not in values:
             values.append(n)
+            print(f"{colors['green']}Value Added{colors['clean']}")
+        else:
+            print(f"{colors['red']}Duplicate value don´t added{colors['clean']}")
         if 0 in values:
             values.remove(0)
             values.sort()
