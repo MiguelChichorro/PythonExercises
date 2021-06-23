@@ -8,7 +8,7 @@ colors = {"clean": "\033[m",
           "cian": "\033[36m"}
 values = list()
 for c in range(0, 5):
-    values.append(int(input("Enter a number: ")))
+    values.append(int(input(f"Enter a number to the position {c}: ")))
 print(f"{colors['blue']}Reading data...{colors['clean']}")
 sleep(1)
 print(f"{colors['green']}The bigger value is {max(values)} and you find him in the position {values.index(max(values))}{colors['clean']}")
