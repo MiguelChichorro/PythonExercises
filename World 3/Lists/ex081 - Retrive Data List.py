@@ -32,7 +32,10 @@ while ans == 1:
     if cont5 == 0:
         print(f"{colors['red']}You don´t enter any time the number 5{colors['clean']}")
     else:
-        print(f"{colors['green']}You enter the number five {cont5} {'time' if cont5 == 1 else 'times'}{colors['clean']}")
+        print(f"{colors['green']}You enter the number five {cont5} {'time' if cont5 == 1 else 'times'} in the postions", end=" ")
+        for i, v in enumerate(values):
+            if v == 5:
+                print(f"{i}...", end="")
     ans = int(input(f"{colors['cian']}\nPress [ 1 ] to do again or another number to leave: {colors['clean']}"))
 if ans != 1:
     print(f"{colors['green']}Have a good day!{colors['clean']}")
