@@ -22,7 +22,7 @@ while ans == 1:
             if n % 2 == 0 and n != 0:
                 valueseven.append(n)
                 conteven += 1
-            if n % 3 == 0 and n != 0:
+            elif n % 2 == 1 and n != 0:
                 valuesodd.append(n)
                 contodd += 1
         else:
