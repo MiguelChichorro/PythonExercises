@@ -13,13 +13,16 @@ while ans == 1:
         ans2 = ""
         print(f"{colors['yellow']}If you want to stop just enter 0{colors['clean']}")
         n = int(input("Enter a number: "))
-        values.append(n)
-        if n == 5:
-            cont5 += 1
-        if 0 in values:
-            values.remove(0)
-            values.sort(reverse=True)
-            break
+        if n not in values:
+            values.append(n)
+            if n == 5:
+                cont5 += 1
+            if 0 in values:
+                values.remove(0)
+                values.sort(reverse=True)
+                break
+        else:
+            print(f"{colors['red']}Duplicate value don´t added{colors['clean']}")
     print(f"{colors['green']}Your list have {len(values)} {'just one number' if len(values) == 1 else 'numbers'}{colors['clean']}")
     while ans2 != "N" and ans2 != "R":
         ans2 = str(input(f"{colors['blue']}You want to see your list in reverse or normal form? [N/R]: {colors['clean']}")).upper()
