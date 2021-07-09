@@ -28,10 +28,10 @@ while ans == 1:
     while True:
         print(f"{colors['red']}if you want to stop just enter 999{colors['clean']}")
         n = int(input("Enter a number:"))
+        if n == 999:
+            print(f"{colors['red']}Stoping...{colors['clean']}")
+            break
         if n <= len(students) - 1:
-            if n == 999:
-                print(f"{colors['red']}Stoping...{colors['clean']}")
-                break
             print(f"{colors['green']}the {students[n][0]} marks are {students[n][1]}{colors['clean']}")
             print(f"{colors['green']}AGAIN{colors['clean']}")
         else:
