@@ -17,7 +17,7 @@ while ans == 1:
         n = int(input("Weight: "))
         if n >= 100:
             bigweight += 1
-        else:
+        elif n <= 70:
             smallweight += 1
         data.append(n)
         guys.append(data[:])

@@ -31,6 +31,7 @@ while ans == 1:
         for c in e.values():
             print(f"{c:<20}", end=" ")
         print()
+    print("=" * 30)
     ans = int(input(f"{colors['cian']}\nPress [ 1 ] to do again or another number to leave: {colors['clean']}"))
 if ans != 1:
     print(f"{colors['green']}Have a good day!{colors['clean']}")
