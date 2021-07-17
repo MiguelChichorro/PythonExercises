@@ -9,6 +9,11 @@ colors = {"clean": "\033[m",
 
 
 def grades(num, sit=False):
+    """
+    :param num: The list with students marks
+    :param sit: The class situation calculate with average
+    :return: The total marks, The bigger/smaller mark and the class average
+    """
     print(f"{colors['purple']}Reading data...{colors['clean']}")
     sleep(1)
     r = dict()
