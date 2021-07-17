@@ -33,7 +33,7 @@ while ans == 1:
             0]
         while ans != "Y" and ans != "N":
             ans = str(input(
-                f"{colors['red']}Please just enter Yes or No [{colors['green']}Y{colors['clean']}/{colors['red']}N{colors['clean']}]: ")).strip().upper()[
+                f"{colors['red']}Please just enter Yes or No {colors['clean']}[{colors['green']}Y{colors['clean']}/{colors['red']}N{colors['clean']}]: ")).strip().upper()[
                 0]
         if ans == "N":
             break

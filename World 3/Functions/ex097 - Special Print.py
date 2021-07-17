@@ -8,9 +8,9 @@ colors = {"clean": "\033[m",
 
 
 def write(txt):
-    tam = len(txt)
+    tam = len(txt) + 3
     print("=" * tam)
-    print(f"{colors['blue']}{txt}{colors['clean']}")
+    print(f"{colors['blue']}   {txt}{colors['clean']}")
     print("=" * tam)
 
 
