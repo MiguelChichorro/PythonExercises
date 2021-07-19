@@ -1,4 +1,4 @@
-from ultilities import coin
+from utilities import coin
 from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
