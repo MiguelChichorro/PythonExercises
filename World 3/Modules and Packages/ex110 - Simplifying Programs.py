@@ -1,4 +1,4 @@
-import ultilities
+from ultilities import coin
 from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
@@ -10,4 +10,4 @@ colors = {"clean": "\033[m",
 n = int(input("Enter How much money do you want to converse: R$"))
 print(f"{colors['purple']}Reading data...{colors['clean']}")
 sleep(1)
-ultilities.resum(n, 19, 28, True)
+coin.resum(n, 19, 28, True)

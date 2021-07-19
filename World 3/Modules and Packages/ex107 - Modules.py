@@ -1,4 +1,4 @@
-import ultilities
+from ultilities import coin
 from time import sleep
 colors = {"clean": "\033[m",
           "red": "\033[31m",
@@ -10,7 +10,7 @@ colors = {"clean": "\033[m",
 n = int(input("Enter How much money do you want to converse: R$"))
 print(f"{colors['purple']}Reading data...{colors['clean']}")
 sleep(1)
-print(f"{colors['blue']}The double is R${ultilities.double(n)}{colors['clean']}")
-print(f"{colors['yellow']}The half is R${ultilities.half(n)}{colors['clean']}")
-print(f"{colors['red']}The up is R${ultilities.up(n)}{colors['clean']}")
-print(f"{colors['purple']}The down is R${ultilities.down(n)}{colors['clean']}")
+print(f"{colors['blue']}The double is R${coin.double(n)}{colors['clean']}")
+print(f"{colors['yellow']}The half is R${coin.half(n)}{colors['clean']}")
+print(f"{colors['red']}The up is R${coin.up(n)}{colors['clean']}")
+print(f"{colors['purple']}The down is R${coin.down(n)}{colors['clean']}")

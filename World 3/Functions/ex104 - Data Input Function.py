@@ -1,5 +1,4 @@
 from time import sleep
-
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
