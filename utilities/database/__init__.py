@@ -1,4 +1,7 @@
 from time import sleep
+
+import requests
+from requests import get
 colors = {"clean": "\033[m",
           "red": "\033[31m",
           "green": "\033[32m",
@@ -25,21 +28,42 @@ def lenCoin(msg):
 
 
 def lenIn(msg):
-    ok = False
-    value = 0
     while True:
-        n = str(input(msg))
-        if n.isnumeric():
-            value = int(n)
-            ok = True
+        try:
+            n = int(input("Enter a int number: "))
+        except (ValueError, TypeError):
+            print(f"{colors['red']}Error try to put a int number{colors['clean']}")
+            continue
+        except (KeyboardInterrupt):
+            print(f"\n{colors['red']}Data Enter interrupt{colors['clean']}")
+            return 0
         else:
-            print(f"{colors['red']}Error write a int number{colors['clean']}")
-        if ok:
-            break
-    Reading()
-    print(f"{colors['yellow']}The number is {value}{colors['clean']}")
+            return n
+
+
+def lenFloat(msg):
+    while True:
+        try:
+            n = float(input("Enter a float number: "))
+        except (ValueError, TypeError):
+            print(f"{colors['red']}Error try to put a float number{colors['clean']}")
+            continue
+        except (KeyboardInterrupt):
+            print(f"\n{colors['red']}Data Enter interrupt{colors['clean']}")
+            return 0
+        else:
+            return n
 
 
 def Choice(ans2=""):
     while ans2 != "Y" and ans2 != "N":
         ans2 = str(input(f"{colors['red']}Please just enter Yes or No {colors['clean']}[{colors['green']}Y{colors['clean']}/{colors['red']}N{colors['clean']}]: ")).strip().upper()[0]
+
+
+def pudim():
+    try:
+        response = requests.get('https://sell.sawbrokers.com/domain/pudim.com/')
+    except:
+        print(f"{colors['red']}I can´t connected with Pudim ;----;{colors['clean']}")
+    else:
+        print(f"{colors['green']}I connected with Pudim :D{colors['clean']}")
