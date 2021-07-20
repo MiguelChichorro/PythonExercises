@@ -30,7 +30,7 @@ def lenCoin(msg):
 def lenIn(msg):
     while True:
         try:
-            n = int(input("Enter a int number: "))
+            n = int(input(msg))
         except (ValueError, TypeError):
             print(f"{colors['red']}Error try to put a int number{colors['clean']}")
             continue
@@ -44,7 +44,7 @@ def lenIn(msg):
 def lenFloat(msg):
     while True:
         try:
-            n = float(input("Enter a float number: "))
+            n = float(input(msg))
         except (ValueError, TypeError):
             print(f"{colors['red']}Error try to put a float number{colors['clean']}")
             continue
