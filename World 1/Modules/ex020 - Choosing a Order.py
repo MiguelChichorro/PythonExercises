@@ -7,7 +7,7 @@ colors = {"clean": "\033[m",
           "blue": "\033[34m",
           "purple": "\033[35m",
           "cian": "\033[36m"}
-order = ["Rafael", "Hugo", "Miguel", "Edvaldo"]
+order = ["Breno", "Edu", "Miguel", "Lucas"]
 print("{}Hmm...let me see{}".format(colors["cian"], colors["clean"]))
 sleep(2)
 print("The presentation order is {}{}{} "
